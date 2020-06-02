@@ -1,0 +1,679 @@
+/*RESET CSS BEGIN*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/*RESET CSS END*/
+
+
+/*HELPER CLASS BEGIN*/
+
+img{
+  max-width: 100%;
+}
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 20px 0;
+}
+
+ul li,
+ol li {
+    margin-bottom: 10px;
+}
+
+
+/*HELPER CLASS END*/
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+/* NAVIGATION BAR */
+
+header
+{
+  background-color: transparent;
+  width: 100%;
+  position:relative;
+}
+
+header .logo img{
+  max-width: 80px;
+}
+
+header.sticky
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-200%);
+  background-color: transparent;
+  transition: 0.2s;
+  z-index: 5;
+}
+
+body.scroll header.sticky{
+  transform: translateY(0);
+}
+
+
+.portfolio-btn,
+.contact-btn{
+  margin:150px auto;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  text-decoration: none;
+}
+.portfolio-btn{
+  margin-right: 30px;
+}
+
+.portfolio-btn:hover,
+.contact-btn:hover {
+  background-color: grey;
+
+}
+
+
+.contact-btn{
+  margin-left: 30px;
+}
+
+.nav-wrapper
+{
+  max-width: 1100px;
+  background: transparent;
+  margin: auto;
+  position: relative;
+  padding: 7px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sticky .nav-wrapper
+{
+  background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8));
+  max-width: 1100px;
+  margin: auto;
+  position: relative;
+  padding: 7px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.1px solid white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.sticky .nav-wrapper ul li a
+{
+
+  font-size: 17px;
+  line-height: 22px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-family: Audiowide;
+  border-bottom: :1px solid transparent;
+}
+
+.nav-wrapper ul li
+{
+  display: inline-block;
+  padding:0 10px;
+  margin-bottom: 1px;
+}
+
+
+.nav-wrapper ul li a
+{
+  font-size: 17px;
+  line-height: 22px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-family: Audiowide;
+  border-bottom: :1px solid transparent;
+}
+
+.nav-wrapper ul li a:hover
+{
+  border-bottom: 1px solid #ffffff;
+  color: #D4AF37;
+}
+
+
+.wrapper
+{
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+
+}
+
+
+/* Parallax page styles start */
+
+.cover-main{
+  background-image: linear-gradient( 118.4deg,  rgba(122,35,52,1) 27.5%, rgba(62,9,27,1) 92.7% );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+ul#scene{
+  margin-top: 150px;
+}
+
+.btn{
+  width: 100%;
+  margin-top: 150px;
+  text-align: center;
+}
+
+ul#scene li.name
+{
+  text-align: center;
+  font-family: Audiowide;
+  font-size: 45px;
+  line-height: 50px;
+  text-transform: capitalize;
+  color: white;
+  width: 100%;
+  margin-top: 50px;
+}
+
+ul#scene li.title{
+    font-family:Special Elite;
+    text-align: center;
+    font-size:  35px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color:white;
+    width: 100%;
+    margin-top: 80px;
+
+}
+
+
+.btn {
+  margin-top: 100px;
+}
+
+/* Parallax page styles End */
+
+/*About Me*/
+.beating-heart
+{
+
+  background:url("../images/about-back.png") right bottom;
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 120vh;
+  padding-top: 100px;
+
+}
+
+.heart
+{
+  height: 10vh;
+  align-items: center;
+  width: 100px;
+  fill:red;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+
+  0%{
+    transform: scale(1);
+  }
+
+  15%{
+    transform: scale(1.25);
+  }
+  25%{
+    transform: scale(1.15);
+  }
+  35%{
+    transform: scale(1.25);
+  }
+
+
+  100%
+  {
+    transform: scale(1);
+  }
+
+}
+
+span
+{
+  font-size: 80px;
+  margin-left: 5px;
+  margin-right: 15px;
+  font-family: Sriracha;
+}
+a
+{
+  text-decoration: none;
+}
+
+
+h1
+{
+  font-family: Merienda one;
+  color: black;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+h1.sub-title::after
+{
+
+  display: block;
+  height: 2px;
+  background-color: black;
+  content: "";
+  width: 100px;
+  margin: 30px auto 0 auto;
+}
+
+/*END OF ABOUT*/
+
+
+/*my skills*/
+.skills{
+
+  background: url("../images/web-skill.jpg");
+  height: 130vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 20px;
+  margin-top: 20px;
+
+}
+/*End of skills */
+
+/*my certficates and acheivements */
+.slider-div
+{
+  background-image: radial-gradient( circle farthest-corner at 47.4% 55%,  rgba(218,61,61,1) 0%, rgba(170,13,71,0.81) 90% );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.slider-div h2{
+  margin-bottom: 0;
+  color: white;
+  margin-bottom: 0px;
+  }
+
+  .image-responsive{
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 5px  black;
+    width: 300px;
+    height: 60vh;
+  }
+
+  .slider{
+  margin:20px;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+
+.slide{
+  height: 100vh;
+  align:center;
+  padding-top: 50px;
+  padding-left: 375px;
+  padding-right: 375px;
+}
+
+.slide img{
+
+  width: 500px;
+}
+
+h4
+{
+  font-size: 35px;
+  font-family:Special Elite;
+  color: white;
+  margin: auto;
+}
+
+.slick-prev,
+.slick-next{
+  background: black;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+small
+{
+  color: white;
+}
+/*my certficates and acheivements */
+
+/* My work and Experience */
+
+  .projects-grid
+  {
+    margin-top: -20px;
+    background-image: linear-gradient( 109.6deg,  rgba(14,11,56,1) 11.2%, rgba(239,37,37,1) 91.1% );
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+    margin left: 200px;
+    height: 120vh;
+  }
+
+  .grid
+  {
+    margin: auto;
+    margin-top: 60px;
+  }
+
+  .grid-item
+  {
+    /*background:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.5));*/
+    background: linear-gradient(rgba(255,255,255,0.4),rgba(255, 255, 255, 0.7));
+    margin-top: 35px;
+    padding: 10px 10px 30px 10px;
+    width: 350px;
+    border: 1px solid white;
+    box-shadow: 0 0 5px 5px black;
+    border-radius: 10px;
+    margin bottom: 25px;
+    text-align: center;
+
+  }
+
+  .grid-item:hover
+  {
+    background: white;
+  }
+
+  .grid-item img{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    height:37vh;
+    width:100%;
+    border: 0.1px solid grey;
+    border-radius: 30px;
+  }
+
+  h2.sub-title
+  {
+    padding-top: 50px;
+    margin-bottom: 25px;
+    font-family: Merienda One;
+    position: relative;
+    display: block;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+    h2.sub-title::after
+    {
+
+      display: block;
+      height: 2px;
+      background-color: white;
+      content: "";
+      width: 100px;
+      margin: 30px auto 0 auto;
+    }
+
+    p
+    {
+      font-family: monospace;
+      font-size: 20px;
+      line-height: 25px;
+      text-align: center;
+      font-weight: 600;
+      color: white;
+      letter-spacing: 1px;
+      line-height: 25px;
+
+    }
+
+    h3
+    {
+      margin-top: 7px;
+      margin-bottom: 10px;
+      text-align: center;
+      color: black;
+      font-size: 35px;
+      font-weight: 600;
+      font-family: Special Elite;
+    }
+
+    .btn1
+    {
+       padding: 10px 5px;
+      border: 2px solid white;
+      border-radius: 5px;
+      color:white;
+      text-decoration: none;
+      background-color: black;
+    }
+/*My Work and Experience End */
+
+
+
+/*Footer*/
+footer
+{
+  position: relative;
+  z-index: -2;
+  height: 150px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+h5
+{
+  font-size: 30px;
+  line-height: 35px;
+  padding-top: 30px;
+  font-family: Audiowide;
+}
+
+#backtotop
+{
+  position: fixed;
+  transform: rotate(-135deg);
+  bottom: 3em;
+  right: 3em;
+  padding: 1em;
+  transition:0.5s ease;
+  box-shadow: 3px 3px 0 0 white;
+}
+/*END OF FOOTER*/

@@ -1,0 +1,168 @@
+body{
+margin: 0 auto;
+background-image: linear-gradient( 180deg,  rgba(21,13,107,1) 1.1%, rgba(188,16,80,1) 130.5% );
+}
+
+.nav-wrapper
+{
+  max-width: 1100px;
+  background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8));
+  margin: auto;
+  position: relative;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;:
+  padding: 15px 15px 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sticky .nav-wrapper
+{
+  background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8));
+  max-width: 1100px;
+  margin: auto;
+  position: relative;
+  padding: 7px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.1px solid white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.sticky .nav-wrapper ul li a
+{
+
+  font-size: 17px;
+  line-height: 22px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-family: Audiowide;
+  border-bottom: :1px solid transparent;
+}
+
+.nav-wrapper ul li
+{
+  display: inline-block;
+  padding:0 10px;
+  margin-bottom: 1px;
+}
+
+
+.nav-wrapper ul li a
+{
+  font-size: 17px;
+  line-height: 22px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-family: Audiowide;
+  border-bottom: :1px solid transparent;
+
+}
+
+.nav-wrapper ul li a:hover
+{
+  border-bottom: 1px solid #ffffff;
+  color: #D4AF37;
+}
+
+
+.wrapper
+{
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+
+}
+
+
+header
+{
+  background-color: transparent;
+  width: 100%;
+  position:relative;
+}
+
+header .logo img{
+  max-width: 80px;
+}
+
+header.sticky
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-200%);
+  background-color: transparent;
+  transition: 0.2s;
+  z-index: 5;
+}
+
+body.scroll header.sticky{
+  transform: translateY(0);
+}
+
+
+h3
+{
+  font-family: Merienda one;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+
+
+.projects-grid
+{
+  margin-top: -20px;
+  background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)), url('../images/back2.jpg');
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 30px;
+  margin left: 200px;
+  height: 120vh;
+}
+
+.grid
+{
+  margin: auto;
+  margin-top: 60px;
+}
+
+.grid-item
+{
+  /*background:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.5));*/
+  background: linear-gradient(rgba(255,255,255,0.4),rgba(255, 255, 255, 0.7));
+  margin-top: 35px;
+  padding: 10px 10px 30px 10px;
+  width: 350px;
+  border: 1px solid white;
+  box-shadow: 0 0 5px 5px black;
+  border-radius: 10px;
+  margin bottom: 25px;
+  text-align: center;
+
+}
+
+.grid-item:hover
+{
+  background: white;
+}
+
+.grid-item img{
+  margin-top: 15px;
+  margin-bottom: 25px;
+  height:37vh;
+  width:100%;
+  border: 0.1px solid grey;
+  border-radius: 30px;
+}
